@@ -4,4 +4,11 @@ body {
 
 .jumbotron {
     text-align: center;
+    font-size: 50px;
+    background-color: navy;
+    color: aliceblue;
+}
+
+.card-header {
+    font-weight: bold;
 }

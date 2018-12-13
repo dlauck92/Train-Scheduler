@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--app.js-->
-    <script src="assets/javascript/app.js"></script>
+    <!--moment.js-->
+    <script src="assets/javascript/moment.js"></script>
     <!--firebase-->
     <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
 </head>
@@ -25,7 +25,6 @@
                 <div class="jumbotron jumbotron-fluid">
                         <div class="container">
                             <h1 class="display-4">Train Scheduler</h1>
-                            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
                         </div>
                     </div>
             </div>
@@ -62,19 +61,19 @@
                                     <form>
                                         <div class="form-group">
                                             <label for="trainNameForm">Train Name</label>
-                                            <input type="text" class="form-control" id="trainNameInput">
+                                            <input type="text" class="form-control" id="trainNameInput" required>
                                         </div>
                                         <div class="form-group">
                                                 <label for="destinationForm">Destination</label>
-                                                <input type="text" class="form-control" id="destinationInput">
+                                                <input type="text" class="form-control" id="destinationInput" required>
                                             </div>
                                         <div class="form-group">
                                                 <label for="trainTimeForm">First Train Time (HH:mm - military time)</label>
-                                                <input type="text" class="form-control" id="trainTimeInput">
+                                                <input type="text" class="form-control" id="trainTimeInput" required>
                                             </div>
                                         <div class="form-group">
                                                 <label for="frequencyForm">Frequency</label>
-                                                <input type="text" class="form-control" id="frequencyInput">
+                                                <input type="text" class="form-control" id="frequencyInput" min="0" max="60" required>
                                             </div>
                                         <button type="button" class="btn btn-primary" id="addTrainButton">Submit</button>
                                     </form>
@@ -83,5 +82,7 @@
                 </div>
             </div>
     </div>
+<!--app.js link-->
+<script src="assets/javascript/app.js"></script>
 </body>
 </html>
